@@ -19,7 +19,13 @@ const educationData: Education[] = [
   },
   {
     institution: "Institute of Chartered Accountant of India",
-    qualification: "CA Intermediate",
+    qualification: "CA Intermediate - Group 1",
+    year: "2023",
+    status: "Cleared"
+  },
+  {
+    institution: "Institute of Chartered Accountant of India",
+    qualification: "CA Intermediate - Group 2",
     year: "2023",
     status: "Appeared"
   },
