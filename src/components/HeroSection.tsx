@@ -3,8 +3,13 @@ import { Download, Mail, Phone, MapPin } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-subtle flex items-center justify-center px-4 py-12">
-      <div className="max-w-4xl mx-auto">
+    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-4 py-12 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(59,130,246,0.1),transparent)]"></div>
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center space-y-8 animate-fade-in">
           <div>
             <h1 className="text-5xl lg:text-7xl font-bold font-display mb-6">
@@ -24,17 +29,17 @@ const HeroSection = () => {
 
           {/* Contact Info */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3 text-foreground bg-card/50 backdrop-blur-sm p-4 rounded-lg shadow-elegant">
+            <div className="flex items-center justify-center gap-3 text-foreground bg-card/70 backdrop-blur-md p-4 rounded-lg shadow-card border border-border/50">
               <Phone className="w-5 h-5 text-primary" />
-              <span>+91 9162072318</span>
+              <span className="text-sm lg:text-base">+91 9162072318</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-foreground bg-card/50 backdrop-blur-sm p-4 rounded-lg shadow-elegant">
+            <div className="flex items-center justify-center gap-3 text-foreground bg-card/70 backdrop-blur-md p-4 rounded-lg shadow-card border border-border/50">
               <Mail className="w-5 h-5 text-primary" />
-              <span>snehashaw6207@gmail.com</span>
+              <span className="text-sm lg:text-base">snehashaw6207@gmail.com</span>
             </div>
-            <div className="flex items-center justify-center gap-3 text-foreground bg-card/50 backdrop-blur-sm p-4 rounded-lg shadow-elegant sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center justify-center gap-3 text-foreground bg-card/70 backdrop-blur-md p-4 rounded-lg shadow-card border border-border/50 sm:col-span-2 lg:col-span-1">
               <MapPin className="w-5 h-5 text-primary" />
-              <span>Kolkata, West Bengal</span>
+              <span className="text-sm lg:text-base">Kolkata, West Bengal</span>
             </div>
           </div>
 
