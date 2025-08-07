@@ -71,13 +71,11 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-subtle': 'var(--gradient-subtle)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
-				'glow': 'var(--shadow-glow)',
-				'card': 'var(--shadow-card)'
+				'glow': 'var(--shadow-glow)'
 			},
 			fontFamily: {
 				'display': ['Inter', 'system-ui', 'sans-serif'],

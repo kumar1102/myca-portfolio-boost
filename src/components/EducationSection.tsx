@@ -51,7 +51,7 @@ const educationData: Education[] = [
 
 const EducationSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-primary">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold font-display mb-4">
